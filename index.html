@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="color-change">
+
+        <span class="color" id="active" onclick="colorChange('#347bed')" style="background-color:#347bed"></span>
+
+        <span class="color" onclick="colorChange('#54f73b')" style="background-color:#8ce67e"></span>
+
+        <span class="color" onclick="colorChange('#f540be')" style="background-color:#f540be"></span>
+
+        <span class="color" onclick="colorChange('#f25d52')" style="background-color:#f25d52"></span>
+
+        <span class="color" onclick="colorChange('#f0b94d')" style="background-color:#f0b94d"></span>
+
+        <span class="color" onclick="colorChange('#64f28e')" style="background-color:#64f28e"></span>
+
+    </div>
+    <div class="main">
+        <div class="main-bg" id="main-bg"></div>
+        <div class="main-content">
+            <form action=""  class="sign-in-form">
+                <p class="head">Sign In</p>
+                <div class="input-box">
+                    <input type="text" name="Email" id="Email" required>
+                    <label for="Email">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="sign-in-password" id="sign-in-password" required>
+                    <label for="sign-in-password">password</label>
+                </div>
+                <div class="bottom-div">
+                    <a href="" class="forgot-password">forgot password ?</a>
+                    <button type="submit" class="submit">Sign in</button>
+                    <p class="sign-up">Don't have an account?<a href="#" onclick="signUp(event)" id="sign-up">Sign Up</a></p>
+                    <p class="or">or sign in with </p>
+                    <div class="icons">
+                        <p>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-google"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+
+            <form action="" class="sign-up-form">
+                <p class="head">Sign Up</p>
+                <div class="input-box">
+                    <input type="text" name="username" id="username" required>
+                    <label for="username">username</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="sign-up-Email" id="sign-up-Email" required>
+                    <label for="sign-up-Email">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="sign-up-password" id="sign-up-password" required>
+                    <label for="sign-up-password">password</label>
+                </div>
+                <div class="bottom-div">
+                    <button type="submit" class="submit">Sign Up</button>
+                    <p class="sign-up">already have an account?<a href="" onclick="signIn(event)">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/34660a6d08.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
